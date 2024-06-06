@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour
     public float timer;
     public GameObject objective;
     public Vector2 speedReference;
-    public int energy;
+    public float energy;
 
     [SerializeField] private TextMeshProUGUI lifeState;
     void Update()
@@ -44,11 +44,11 @@ public class EnemyController : MonoBehaviour
         if (collision.gameObject.tag == "Node") 
         {
             objective = collision.gameObject.GetComponent<NodeController>().SelecRandomAdjancent().gameObject;
-            int weight = objective.GetComponent<NodeController>().GetNodeWeight();
+            float weight = objective.GetComponent<NodeController>().GetNodeWeight();
             RestLife(weight);
         }
     }
-    public void RestLife(int weight)
+    public void RestLife(float weight)
     {
         energy = energy - weight;
 

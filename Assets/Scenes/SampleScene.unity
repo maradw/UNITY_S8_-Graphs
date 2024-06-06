@@ -431,12 +431,13 @@ MonoBehaviour:
   nodePositionTxt: {fileID: 4900000, guid: 384e71710ede0844d84a50e4f7519d3c, type: 3}
   arrayNodePositions: []
   currentNodePositions: []
-  allNodes: []
   nodeConectionsTxt: {fileID: 4900000, guid: 40b5d388ac0526446bcc26faba49ee9f, type: 3}
   arrayNodeConections: []
   currentNodeConections: []
   enemy: {fileID: 2030342317}
   initialIndex: 0
+  nodeWeight: {fileID: 4900000, guid: 5e733f345a074f447ad6f9701e277ef5, type: 3}
+  arrayWeight: []
 --- !u!4 &1112628015
 Transform:
   m_ObjectHideFlags: 0

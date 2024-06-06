@@ -4,7 +4,7 @@ using UnityEngine;
 public class NodeController : MonoBehaviour
 {
     public int index;
-    [SerializeField] private int weightNumb;
+    [SerializeField] private float weightNumb;
     [SerializeField] private SimplyLinkedList<NodeController> adjacentNodes = new SimplyLinkedList<NodeController>();
     
 
@@ -17,11 +17,11 @@ public class NodeController : MonoBehaviour
          index = Random.Range(0, adjacentNodes.length);
         return adjacentNodes.ObtainNodeAtPosition(index);
     }
-    public void SetWeight(int weight)
+    public void SetWeight(float weight)
     {
         weightNumb = weight;
     }
-    public int GetNodeWeight()
+    public float GetNodeWeight()
     {
         return weightNumb;
     }
